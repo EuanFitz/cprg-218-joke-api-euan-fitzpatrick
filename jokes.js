@@ -72,7 +72,7 @@ fetch("https://v2.jokeapi.dev/joke/Christmas?safe-mode")
     christmas.addEventListener('click', function(){
         joketype.textContent = 'A Random Christmas Joke';
         jokedisplay.style.backgroundColor = 'green';
-    jokedisplay.style.color = 'white';
+        jokedisplay.style.color = 'white';
         if(data.joke){
             jokedisplay.textContent = data.joke;
         }else{
