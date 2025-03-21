@@ -28,7 +28,13 @@
 #jokedisplay{
     padding: 1rem;
     border: 3px solid black;
+    margin: auto 0;
 }
+.jokepic{
+   display: flex;
+   gap: 1rem;
+}
+
  #openmodal{
     position: fixed;
     left: 0;
