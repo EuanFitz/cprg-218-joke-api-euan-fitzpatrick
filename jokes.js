@@ -12,10 +12,10 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
     }
 });
 
-fetch("https://v2.jokeapi.dev/joke/programming?safe-mode")
-.then(response => response.json())
-.then(data => {
-    programming.addEventListener('click', function(){
+programming.addEventListener('click', function(){
+    fetch("https://v2.jokeapi.dev/joke/programming?safe-mode")
+    .then(response => response.json())
+    .then(data => {
         joketype.textContent = 'A Random Programming Joke';
         jokedisplay.style.backgroundColor = 'purple';
         funnypic.src = "images/beardguylaugh.jpg";
@@ -27,10 +27,10 @@ fetch("https://v2.jokeapi.dev/joke/programming?safe-mode")
         }})
     });
 
-fetch("https://v2.jokeapi.dev/joke/pun?safe-mode")
-.then(response => response.json())
-.then(data => {
     pun.addEventListener('click', function(){
+    fetch("https://v2.jokeapi.dev/joke/pun?safe-mode")
+    .then(response => response.json())
+    .then(data => {
         joketype.textContent = 'A Random Pun'
         jokedisplay.style.backgroundColor = 'red';
         funnypic.src = "images/pugredbackground.jpg";
@@ -42,10 +42,10 @@ fetch("https://v2.jokeapi.dev/joke/pun?safe-mode")
         }})
     });
 
-fetch("https://v2.jokeapi.dev/joke/misc?safe-mode")
-.then(response => response.json())
-.then(data => {
     misc.addEventListener('click', function(){
+    fetch("https://v2.jokeapi.dev/joke/misc?safe-mode")
+    .then(response => response.json())
+    .then(data => {
         joketype.textContent = 'A Random Miscellaneous Joke';
         jokedisplay.style.backgroundColor = 'white';
         funnypic.src = "images/cowtongue.jpg";
@@ -57,10 +57,10 @@ fetch("https://v2.jokeapi.dev/joke/misc?safe-mode")
         }})
     });
 
-fetch("https://v2.jokeapi.dev/joke/spooky?safe-mode")
-.then(response => response.json())
-.then(data => {
-   spooky.addEventListener('click', function(){
+    spooky.addEventListener('click', function(){
+    fetch("https://v2.jokeapi.dev/joke/spooky?safe-mode")
+    .then(response => response.json())
+    .then(data => {
     jokedisplay.style.backgroundColor = 'black';
     jokedisplay.style.color = 'white';
     joketype.textContent = 'A Random Spooky joke';
@@ -72,10 +72,10 @@ fetch("https://v2.jokeapi.dev/joke/spooky?safe-mode")
         }})
     });
 
-fetch("https://v2.jokeapi.dev/joke/Christmas?safe-mode")
-.then(response => response.json())
-.then(data => {
     christmas.addEventListener('click', function(){
+    fetch("https://v2.jokeapi.dev/joke/Christmas?safe-mode")
+    .then(response => response.json())
+    .then(data => {
         joketype.textContent = 'A Random Christmas Joke';
         jokedisplay.style.backgroundColor = 'green';
         jokedisplay.style.color = 'white';
